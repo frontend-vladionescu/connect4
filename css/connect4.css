@@ -1,0 +1,182 @@
+
+.playerSelectorForm{
+  background-color:#F5ECCE;
+  border-radius:20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  margin: 15% auto;
+  padding:15px;
+  position:relative;
+  width: 40%;
+}
+
+p{
+  display:inline-block;
+  margin:5px;
+  font-size:15px;
+}
+.invisible{
+  display:none;
+}
+.nameText{
+  font-size:20px;
+}
+.submitButton{
+  border-radius:20px;
+}
+.submitButton:focus {
+  outline:0;
+}
+
+.circle{ 
+  background-color:white;
+  border: 3px solid	black;
+  border-radius:50%;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  margin:10px;
+  padding-top: 10%;
+  position:absolute;
+  right:30%;
+  top:40%;
+  transition: all 2s;
+  width:10%;
+}
+
+
+.redCircle{
+  background-color: red;
+  border-radius:50%;
+  display: inline-block;
+  height: auto;
+  margin:10px;
+  padding-top: 10%;
+  width:10%;
+}
+ 
+.blackCircle{
+  background-color:black;
+  border-radius:50%;
+  display: inline-block;
+  height: auto;
+  margin:10px;
+  padding-top: 10%;
+  width:10%;
+}
+  
+
+
+.greenCircle{
+  background-color:green;
+  border-radius:50%;
+  display: inline-block;
+  height: auto;
+  margin:10px;
+  padding-top: 10%;
+  width:10%;
+}
+
+
+
+.pinkCircle{
+  background-color:pink;
+  border-radius:50%;
+  display: inline-block;
+  height: auto;
+  margin:10px;
+  padding-top: 10%;
+  width:10%;
+}
+
+
+.yellowCircle{
+  background-color:yellow;
+  border-radius:50%;
+  display: inline-block;
+  height: auto;
+  margin:10px;
+  padding-top: 10%;
+  width:10%;
+}
+
+.purpleCircle{
+  background-color:purple;
+  border-radius:50%;
+  display: inline-block;
+  height: auto;
+  margin:10px;
+  padding-top: 10%;
+  width:10%;
+}
+  
+
+ @keyframes filling {
+  from{
+    background-position: center 100%;
+  }
+  to {
+    background-position: center 1%;
+  }
+}
+
+.container-text {
+  animation: filling 3s ease forwards;
+  background-image:   url(../images/tiles.jpg);
+  font-family: 'Times New Roman', cursive;
+  font-size: 90px;
+  font-weight: bold;
+  left:30%;
+  padding-top: 50px;
+  position: absolute;
+  right:30%;
+  text-align:center;
+  top:1%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.emptyCircle{
+  background-color:white;
+  border-radius:50%;
+  display: inline-block;
+  height: auto;
+  margin:10px;
+  padding-top: 10%;
+  width:10%;
+}
+  
+
+.connect4Board{
+  background: rgba(150,203,250,1);
+  background: -moz-linear-gradient(top, rgba(150,203,250,1) 0%, rgba(41,63,204,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(150,203,250,1)), color-stop(100%, rgba(41,63,204,1)));
+  background: -webkit-linear-gradient(top, rgba(150,203,250,1) 0%, rgba(41,63,204,1) 100%);
+  background: -o-linear-gradient(top, rgba(150,203,250,1) 0%, rgba(41,63,204,1) 100%);
+  background: -ms-linear-gradient(top, rgba(150,203,250,1) 0%, rgba(41,63,204,1) 100%);
+  background: linear-gradient(to bottom, rgba(150,203,250,1) 0%, rgba(41,63,204,1) 100%);
+  border:1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 4px rgba(0, 0, 0, 0.24);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96cbfa', endColorstr='#293fcc', GradientType=0 );
+  margin: 0 auto;
+  margin-top:15%;
+  width:40%;
+ 
+}
+
+.winner{
+  background-color:blue;
+  background-image:url("../images/backgorund.jpg");
+  display:block-inline;
+  height:100px;
+  margin: 0 auto;
+  margin-top:50px;
+  padding-top:15px;
+  text-align:center;
+  width:40%;
+}
+
+.resetButton{
+  height:30px;
+  margin:10px auto;
+  text-align: center;
+  width:15%;
+}
+
