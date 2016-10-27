@@ -25,20 +25,19 @@
   </head>
 
   <body>
-    <div class="container-text">CONNECT4</div>
     <div id="playerSelectorForm" class="playerSelectorForm">
       <form id="playerForm">
-        <p id="nameText" class="nameText">First player name:</p>
-        <input type="text" id = "playerName"> <br> 
-        <p>Pick a color:</p><br>
-        <div id="radioButtons">
-          <input type="radio" name="color" id="red"><p id="redp"> Red</p><br>
-          <input type="radio" name="color" id="black"><p id="blackp"> Black</p><br>
-          <input type="radio" name="color" id="green"><p id="greenp"> Green</p><br>
-          <input type="radio" name="color" id="purple"><p id="purplep"> Purple</p><br>
-          <input type="radio" name="color" id="pink"><p id="pinkp"> Pink</p><br>
-          <input type="radio" name="color" id="yellow"><p id="yellowp"> Yellow</p><br>
-        </div>
+        <label id="nameText" class="nameText">First player name:</label><br>
+        <input type="text" id = "playerName"><br> 
+        <label>Pick a color:</label><br>
+        <fieldset id="radio-buttons">
+          <input type="radio" name="color" id="red"><label name="label-color"id="redLabel"> Red</label><br>
+          <input type="radio" name="color" id="black"><label name="label-color" id="blackLabel"> Black</label><br>
+          <input type="radio" name="color" id="green"><label name="label-color" id="greenLabel"> Green</label><br>
+          <input type="radio" name="color" id="purple"><label name="label-color" id="purpleLabel"> Purple</label><br>
+          <input type="radio" name="color" id="pink"><label name="label-color" id="pinkLabel"> Pink</label><br>
+          <input type="radio" name="color" id="yellow"><label name="label-color" id="yellowLabel"> Yellow</label><br>
+        </fieldset>
         <div class="circle" id="circle"></div>
         <input type="submit" value="Submit" id="submit" class="submitButton">
       </form>
@@ -47,7 +46,7 @@
     <div id="winner" class="invisible"></div>
     <div id="resetbutton" class="invisible"><button>PLAY AGAIN!</button></div> 
    
-    <script type="text/javascript" src="js/connect4.js"></script>
-      
+    <script type="text/javascript" src="js/playerSelector.js"></script>
+    <script type="text/javascript" src="js/connect4Board.js"></script>    
   </body>
 </html>

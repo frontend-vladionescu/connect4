@@ -1,4 +1,6 @@
-
+body{
+  background-image: url("../back.png")
+}
 .playerSelectorForm{
   background-color:#F5ECCE;
   border-radius:20px;
@@ -7,16 +9,23 @@
   margin: 15% auto;
   padding:15px;
   position:relative;
-  width: 40%;
+  width: 30%;
+  height:300px;
 }
 
-p{
-  display:inline-block;
-  margin:5px;
-  font-size:15px;
+input{
+  border-radius:4px;
+}
+
+input:focus{
+  outline:none;
 }
 .invisible{
   display:none;
+}
+fieldset{
+  border:0;
+  margin:0;
 }
 .nameText{
   font-size:20px;
@@ -24,7 +33,7 @@ p{
 .submitButton{
   border-radius:20px;
 }
-.submitButton:focus {
+.submitButton:focus{
   outline:0;
 }
 
@@ -42,108 +51,39 @@ p{
   width:10%;
 }
 
-
-.redCircle{
-  background-color: red;
+.emptyCircle{
+  background-color:white;
   border-radius:50%;
-  display: inline-block;
+  display:inline-block;
   height: auto;
-  margin:10px;
+  margin: 2%;
   padding-top: 10%;
   width:10%;
 }
  
+.redCircle{
+  background-color: red; 
+}
+ 
 .blackCircle{
   background-color:black;
-  border-radius:50%;
-  display: inline-block;
-  height: auto;
-  margin:10px;
-  padding-top: 10%;
-  width:10%;
 }
   
-
-
 .greenCircle{
   background-color:green;
-  border-radius:50%;
-  display: inline-block;
-  height: auto;
-  margin:10px;
-  padding-top: 10%;
-  width:10%;
 }
-
-
 
 .pinkCircle{
   background-color:pink;
-  border-radius:50%;
-  display: inline-block;
-  height: auto;
-  margin:10px;
-  padding-top: 10%;
-  width:10%;
 }
-
-
 .yellowCircle{
   background-color:yellow;
-  border-radius:50%;
-  display: inline-block;
-  height: auto;
-  margin:10px;
-  padding-top: 10%;
-  width:10%;
 }
 
 .purpleCircle{
   background-color:purple;
-  border-radius:50%;
-  display: inline-block;
-  height: auto;
-  margin:10px;
-  padding-top: 10%;
-  width:10%;
 }
   
-
- @keyframes filling {
-  from{
-    background-position: center 100%;
-  }
-  to {
-    background-position: center 1%;
-  }
-}
-
-.container-text {
-  animation: filling 3s ease forwards;
-  background-image:   url(../images/tiles.jpg);
-  font-family: 'Times New Roman', cursive;
-  font-size: 90px;
-  font-weight: bold;
-  left:30%;
-  padding-top: 50px;
-  position: absolute;
-  right:30%;
-  text-align:center;
-  top:1%;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-.emptyCircle{
-  background-color:white;
-  border-radius:50%;
-  display: inline-block;
-  height: auto;
-  margin:10px;
-  padding-top: 10%;
-  width:10%;
-}
-  
-
 .connect4Board{
   background: rgba(150,203,250,1);
   background: -moz-linear-gradient(top, rgba(150,203,250,1) 0%, rgba(41,63,204,1) 100%);
@@ -164,7 +104,6 @@ p{
 
 .winner{
   background-color:blue;
-  background-image:url("../images/backgorund.jpg");
   display:block-inline;
   font-family: 'Pacifico', cursive;
   height:100px;
@@ -176,10 +115,15 @@ p{
 }
 
 .resetButton{
+  border-radius:5px;
   font-family: 'Pacifico', cursive;
   height:30px;
   margin:10px auto;
   text-align: center;
   width:15%;
+}
+
+#playerName{
+  width:60%;	
 }
 
