@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CONNECT 4</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/connect4.css" />
+    
+  </head>
+
+  <body>
+    <div id="playerSelectorForm" class="playerSelectorForm">
+      <form id="playerForm">
+        <label id="nameText" class="nameText">First player name:</label><br>
+        <input type="text" id = "playerName"><br> 
+        <label>Pick a color:</label><br>
+        <fieldset id="radio-buttons">
+          <input type="radio" name="color" id="red"><label name="label-color"id="redLabel"> Red</label><br>
+          <input type="radio" name="color" id="black"><label name="label-color" id="blackLabel"> Black</label><br>
+          <input type="radio" name="color" id="green"><label name="label-color" id="greenLabel"> Green</label><br>
+          <input type="radio" name="color" id="purple"><label name="label-color" id="purpleLabel"> Purple</label><br>
+          <input type="radio" name="color" id="pink"><label name="label-color" id="pinkLabel"> Pink</label><br>
+          <input type="radio" name="color" id="yellow"><label name="label-color" id="yellowLabel"> Yellow</label><br>
+        </fieldset>
+        <div class="circle" id="circle"></div>
+        <input type="submit" value="Submit" id="submit" class="submitButton">
+      </form>
+    </div>
+    <div id="connect4" class="invisible"></div>
+    <div id="winner" class="invisible"></div>
+    <div id="resetbutton" class="invisible"><button>PLAY AGAIN!</button></div> 
+   
+    <script type="text/javascript" src="js/playerSelector.js"></script>
+    <script type="text/javascript" src="js/connect4Board.js"></script>    
+  </body>
+</html>
